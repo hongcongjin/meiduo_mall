@@ -1,6 +1,6 @@
 # meiduo_mall
 
-##### 1,使用自己定义的配置文件
+###### 1,使用自己定义的配置文件
 
 ​	在项目目录下新建settings包，新建dev.py(开发环境),prod.py(生产环境)	
 ​	在manage.py中指定自己新建的配置文件为项目配置文件
@@ -25,9 +25,10 @@
 
 ​	在dev.py中进行工程日志的相关配置
 ​	准备日志文件目录在与项目同级的目录下新建logs文件夹
-​	(import logging
+​	(import logging）
 
-	###### 创建日志记录器
+​	创建日志记录器
+
 ​	logger = logging.getLogger('django'))
 
 ###### 6,配置前端静态文件
