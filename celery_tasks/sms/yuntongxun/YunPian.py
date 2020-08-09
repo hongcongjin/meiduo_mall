@@ -4,7 +4,7 @@ import json
 # def send_single_sms(apikey, code, mobile):
 #     #发送单条短信
 #     url = "https://sms.yunpian.com/v2/sms/single_send.json"
-#     text = "【洪明焱test】您的验证码是{}.如非本人操作，请忽略此短信".format(code)
+#     text = "【test】您的验证码是{}.如非本人操作，请忽略此短信".format(code)
 #
 #     res = requests.post(url, data={
 #         "apikey": apikey,
@@ -41,4 +41,4 @@ class CCP(object):
 
 if __name__ == '__main__':
     #单例类发送短信验证码
-    CCP().send_single_sms("73be1ab7c254c563fce13bfff376b22f", "123456","13697986850")
+    CCP().send_single_sms("", "123456","13697986850")

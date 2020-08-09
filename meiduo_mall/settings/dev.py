@@ -119,7 +119,7 @@ DATABASES = {
         'HOST': '127.0.0.1', # 数据库主机
         'PORT': 3306, # 数据库端口
         'USER': 'root', # 数据库用户名
-        'PASSWORD': '12345', # 数据库用户密码
+        'PASSWORD': '', # 数据库用户密码
         'NAME': 'meidou' # 数据库名字
     },
 }
@@ -263,16 +263,16 @@ AUTHENTICATION_BACKENDS = ['users.utils.UsernameMobileBackend']
 LOGIN_URL = '/login/'
 
 # QQ登录的配置参数
-QQ_CLIENT_ID = '101518219'
-QQ_CLIENT_SECRET = '418d84ebdc7241efb79536886ae95224'
+QQ_CLIENT_ID = ''
+QQ_CLIENT_SECRET = ''
 QQ_REDIRECT_URI = 'http://www.meiduo.site:8000/oauth_callback'
 
 # 邮件参数
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend' # 导入邮件模块
 EMAIL_HOST = 'smtp.163.com' # 发邮件主机
 EMAIL_PORT = 25 # 发邮件端口
-EMAIL_HOST_USER = 'hongcongjin2@163.com' # 授权的邮箱
-EMAIL_HOST_PASSWORD = 'PKQYCOBYOFOJHYPE' # 邮箱授权时获得的密码，非注册登录密码
+EMAIL_HOST_USER = '' # 授权的邮箱
+EMAIL_HOST_PASSWORD = '' # 邮箱授权时获得的密码，非注册登录密码
 EMAIL_FROM = '美多商城<hongcongjin2@163.com>' # 发件人抬头
 
 EMAIL_VERIFY_URL = 'http://www.meiduo.site:8000/emails/verification/'
@@ -298,7 +298,7 @@ HAYSTACK_SEARCH_RESULTS_PER_PAGE = 5
 
 
 # 支付宝
-ALIPAY_APPID = '2021000116688035'
+ALIPAY_APPID = ''
 ALIPAY_DEBUG = True
 ALIPAY_URL = 'https://openapi.alipaydev.com/gateway.do'
 ALIPAY_RETURN_URL = 'http://www.meiduo.site:8000/payment/status/'
